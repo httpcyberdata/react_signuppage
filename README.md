@@ -13,9 +13,33 @@ ___________
 ### How to use
 
 ### Photos of project:
+![](public/react_signuppage_1.png)
+![](public/react_signuppage_2.gif)
+
 
 ### Apps used:
+Sublime Text: [https://www.sublimetext.com/](https://www.sublimetext.com/)
+Tabby: [https://tabby.sh/](https://tabby.sh/) 
+
+GitHub CLI: [https://cli.github.com/](https://cli.github.com/) 
+
+
 
 ### Coding styles I used:
+Indented attributes
+```
+	// Wrong
+     <input className="TextInput" type="password" name="passwordInput" placeholder="Password repeat"
+     />
+
+     // Right
+          	<input 
+                className="TextInput"
+                type="password"
+                name="passwordInput"
+                placeholder="Password repeat"
+            />
+```
 
 ### What I learned
+1. How you can build a nicely designed sign up page in ReactJS with the entire CSS language available in the library. Without a web server and using only 2 files (index.html and a .css file) it's rather rough. With ReactJS It comes with a built-in auto-reloading server. Though it's component based and the library hides the body element, simply build the site inside the default App.js & App.css files it's pre-created with in create-react-app.
