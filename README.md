@@ -1,4 +1,4 @@
-# Project title
+# React Sign Up Page
 Tutorial URL: https://www.youtube.com/watch?v=ALy5Srt4R9E
 Tutorial description: In this video we build a sign up page in react with hooks. First we build the register form and add styling to it. After that we add state management with the useReducer React hook and then we also add some input validation.
 
@@ -7,7 +7,21 @@ ___________
 ### Software versions
 
 ### Problems in the project:
-1.
+1. Syntax Error: 'return' outside of function. 
+	In JavaScript you can put a return statement outside the if statement so I didn't know how to fix this problem at first so I rewritten the function and compared the last one to the rewritten one and noticed I missed a bracket after the if statement wrapped in parenthesis.
+	Causing problem:
+	Right if statement with both brackets
+	```
+	if(a === b) {
+
+	}
+	````
+	```
+	Wrong if statement missing one bracket
+	if(a === b) 
+
+	}
+	```
 2.
 
 ### How to use
