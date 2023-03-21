@@ -22,7 +22,29 @@ ___________
 
 	}
 	```
-2.
+2. Color won't change.
+	First, the password must be greater than 3 characters for the boolean to pass as true. Second, I put the the second password name's attribute as 'PasswordInput' while the function is expecting an input's name attribute as PasswordRepeat and not as 'PasswordInput'
+	![](public/react_signuppage_3.gif)
+	```
+	// this object has a key 'passwordRepeat' and is saving the form's data. There is no 'passwordInput'
+	//
+	const initialState = {
+	  name: '',
+	  email: '',
+	  password: '',
+	  passwordRepeat: '',
+	  termsAccepted: false
+	}
+			// name is as 'passwordInput' and not as passwordRepeat
+			// 
+	      	<input 
+                className="TextInput"
+                type="password"
+                name="passwordInput"
+                placeholder="Password repeat"
+                onChange={onChange}
+            />
+	```
 
 ### How to use
 
